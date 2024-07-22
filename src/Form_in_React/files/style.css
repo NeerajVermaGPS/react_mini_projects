@@ -1,0 +1,87 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.primary_btn {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    padding: 10px 25px;
+    font-family: Alexandria;
+    cursor: pointer;
+}
+
+.primary_btn:hover {
+    background-color: rgb(63, 126, 63);
+}
+
+#login_form {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px #d1d1d1;
+}
+
+label {
+    text-transform: capitalize;
+    margin:  4px 0;
+    font-weight: bold;
+}
+
+.formEl {
+    width: 100%;
+    align-items: start;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+input[type = "text"], input[type = "email"], input[type = "file"], select, textarea {
+    width: 100%;
+    padding: 7px;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    font-family: "Alexandria";
+}
+
+.optionLabel {
+    margin: 0;
+    margin-right: 10px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.userCard {
+    line-height: 30px;
+    max-width: 350px;
+    width: 95%;
+    background-color: white;
+    border: 2px solid #3585f9;
+    border-top: none;
+    border-bottom: none;
+    padding: 20px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: "Alexandria";
+}
+
+.successInfo {
+    padding: 18px;
+    background: rgb(92 186 4 / 56%);
+    border: 2px solid rgb(99, 205, 0);
+    border-radius: 6px;
+    max-width: 350px;
+    width: 90%;
+    margin-bottom: 30px;
+    color: white;
+}
