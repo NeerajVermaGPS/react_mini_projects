@@ -6,21 +6,12 @@ export const useForm = (initialValue = {}) => {
     setValue({...value, [e.target.name]: e.target.value})
   }
 
-  const submitForm = (e) => {
-    e.preventDefault()
-    const formdata = new FormData(e.target)
-    const jsdf = JSON.stringify(Object.fromEntries(formdata))
-    console.log(jsdf)
-    sessionStorage.setItem("user", jsdf);
-    resetForm(e);
-  }
-
   const resetForm = (e) => {
     e.preventDefault()
     setValue(initialValue)
   }
 
-  return [value, changeValue, submitForm, resetForm]
+  return [value, changeValue, resetForm]
 }
 
 export const useInput = (initialValue = "") => {

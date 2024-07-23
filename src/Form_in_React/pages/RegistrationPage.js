@@ -16,8 +16,17 @@ const RegistrationPage = (props) => {
     choice: '',
     about: ''
   }
-  
-  const [form, setForm, submitForm, resetForm] = useForm(initialState)
+
+  const [form, setForm, resetForm] = useForm(initialState)
+
+  const submitForm = (e) => {
+    e.preventDefault()
+    const formdata = new FormData(e.target)
+    const jsdf = JSON.stringify(Object.fromEntries(formdata))
+    console.log(jsdf)
+    sessionStorage.setItem("user", jsdf);
+    resetForm(e);
+  }
 
   console.log("Component Rerendered")
   return (
