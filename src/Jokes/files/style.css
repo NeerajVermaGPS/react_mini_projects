@@ -42,7 +42,7 @@ label {
     flex-wrap: wrap;
 }
 
-input {
+input[type = "number"] {
     width: 240px;
     padding: 9px;
     margin: 5px;

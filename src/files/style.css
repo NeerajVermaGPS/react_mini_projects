@@ -1,0 +1,86 @@
+.ModalPortal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: 0.4s;
+    z-index: 2000
+}
+
+#modalCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: Alexandria;
+}
+
+.projectCardCont {
+    font-family: Alexandria;
+    position: relative;
+    width: 90%;
+    max-width: 250px;
+    margin: 10px;
+    border-radius: 6px;
+    background: rgb(2,0,36);
+    padding: 2px;
+    background: linear-gradient(45deg, rgba(253,29,29,1) 10%, rgba(252,176,69,1) 100%);
+}
+.projectCard {
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+.projectImage img {
+    border-radius: 4px;
+}
+.projectId {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #78777763;
+    font-size: 24px;
+    font-family: Alexandria;
+    font-weight: bold;
+}
+.projectDetail {
+    margin-top: 18px;
+}
+.projectName {
+    margin-bottom: 12px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.projectDetailRow {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.projectExpand {
+    background: black;
+    color: white;
+    font-family: Alexandria;
+    font-size: 13px;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.projectStatus {
+    /* background: darkslategray; */
+    margin-left: 1px; /* 10px */
+    color: lightgray;
+    padding: 2px 5px;
+    /* border-radius: 4px; */
+}

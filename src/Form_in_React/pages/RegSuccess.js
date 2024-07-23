@@ -8,7 +8,7 @@ const RegSuccess = (props) => {
     console.log(subjects)
 
   return (
-    <div className='full-hw center column' style={{background: "aliceblue"}}>
+    <div className='full-hw center column' style={{background: "aliceblue", overflow:"auto"}}>
       <div className='successInfo'><h3 style={{fontSize: "13px", fontWeight: "normal", fontFamily: "Alexandria"}}>You are registered successfully!</h3></div>
       <div className='userCard center column'>
         <div className='center column' style={{marginBottom: "15px"}}>

@@ -64,7 +64,7 @@ const Index = () => {
   }
 
   return (
-    <div className="center column full-hw" style={{background: "aliceblue", justifyContent: "start"}}>
+    <div className="center column full-hw" style={{background: "aliceblue", justifyContent: "start", overflow: "auto"}}>
      <div className="center column" id="jokeDiv">
       <h2 style={{margin: "10px 0 20px 0", fontFamily: "Alexandria", color: "darkgreen", textAlign: "center"}}>Random Joke Generator</h2>
       <label htmlFor="joke">Enter number of jokes you want<br/>(minimum 1 and maximum 10)</label>

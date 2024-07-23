@@ -30,23 +30,23 @@ const RegistrationPage = (props) => {
 
   console.log("Component Rerendered")
   return (
-    <div className='full-hw center' style={{background: "aliceblue", fontFamily: "Alexandria", alignItems: "start"}}>
+    <div className='full-hw center' style={{background: "aliceblue", fontFamily: "Alexandria", alignItems: "start", overflow:"auto"}}>
       <form onSubmit={(e) => {submitForm(e); props.loginStatus()}} id='login_form' className='center column'>
         <h2 style={{margin: "8px", fontSize: "19px", color: "darkgreen"}}>Registration Form</h2>
         <div className='formEl column'>
-          <label htmlFor="firstname">firstname: </label>
+          <label className='formLabel' htmlFor="firstname">firstname: </label>
           <input type="text" id='firstname' name='firstname' value={form.firstname} onChange={setForm} placeholder='Enter your first name' required/>
         </div>
         <div className='formEl column'>
-          <label htmlFor="lastname">lastname: </label>
+          <label className='formLabel' htmlFor="lastname">lastname: </label>
           <input type="text" id='lastname' name='lastname' value={form.lastname} onChange={setForm} placeholder='Enter your last name' />
         </div>
         <div className='formEl column'>
-          <label htmlFor="email">email: </label>
+          <label className='formLabel' htmlFor="email">email: </label>
           <input type="email" id='email' name='email' value={form.email} onChange={setForm} placeholder='Enter your email' required/>
         </div>
         <div className='formEl column'>
-          <label htmlFor="contact">contact: </label>
+          <label className='formLabel' htmlFor="contact">contact: </label>
           <input type="text" id='contact' name='contact' value={form.contact} onChange={setForm} placeholder='Enter your contact' required/>
         </div>
         <div className='formEl column'>
@@ -72,11 +72,11 @@ const RegistrationPage = (props) => {
           </div>
         </div>
         <div className='formEl column'>
-          <label htmlFor="resume">resume: </label>
+          <label className='formLabel' htmlFor="resume">resume: </label>
           <input type="file" id='resume' name='resume' value={form.resume} onChange={setForm} placeholder='Upload your resume' />
         </div>
         <div className='formEl column'>
-          <label htmlFor="url">Enter website URL: </label>
+          <label className='formLabel' htmlFor="url">Enter website URL: </label>
           <input type="text" id='url' name='url' value={form.url} onChange={setForm} placeholder='Enter your url' required/>
         </div>
         <div className='formEl column'>
@@ -88,7 +88,7 @@ const RegistrationPage = (props) => {
           </select>
         </div>
         <div className='formEl column'>
-          <label htmlFor="about">about: </label>
+          <label className='formLabel' htmlFor="about">about: </label>
           <textarea id='about' name='about' value={form.about} onChange={setForm} placeholder='Enter your about'></textarea>
         </div>
         <div className='formEl row' style={{justifyContent: "space-between", marginTop: "20px"}}>

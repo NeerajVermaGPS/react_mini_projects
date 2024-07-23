@@ -31,7 +31,7 @@ html, body {
     box-shadow: 0px 0px 10px 2px #d1d1d1;
 }
 
-label {
+.formLabel {
     text-transform: capitalize;
     margin:  4px 0;
     font-weight: bold;
