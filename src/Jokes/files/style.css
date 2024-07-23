@@ -1,0 +1,128 @@
+.primary_btn {
+    background-color: #3585f9;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    padding: 10px 25px;
+    font-family: Alexandria;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.primary_btn:hover {
+    background-color: #5e9eff;
+}
+
+#jokeDiv {
+    width: 93%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    font-family: Alexandria;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 2px #d1d1d1;
+}
+
+label {
+    text-transform: capitalize;
+    margin:  0 0 15px;
+    text-align: center;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.formEl {
+    width: 100%;
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 240px;
+    padding: 9px;
+    margin: 5px;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    text-align: center;
+    font-family: "Alexandria";
+}
+
+.jokeContainer {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.jokeCard {
+    line-height: 30px;
+    max-width: 350px;
+    width: 95%;
+    background-color: white;
+    border: 2px solid #3585f9;
+    border-top: none;
+    border-bottom: none;
+    padding: 20px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 10px;
+    font-family: "Alexandria";
+}
+
+.info {
+    padding: 18px;
+    border-radius: 6px;
+    max-width: 350px;
+    width: 90%;
+    margin: 20px;
+    font-size: 13px;
+    color: white;
+}
+
+.success {
+    background: rgb(92 186 4 / 56%);
+    border: 2px solid rgb(99, 205, 0);
+}
+
+.failure {
+    background: rgba(186, 4, 4, 0.56);
+    border: 2px solid rgb(205, 0, 0);
+}
+
+.loadingDiv {
+    width: 100%;
+    padding: 30px;
+    /* background-color: #5e9eff; */
+    margin: 30px 0;
+    color: #3585f9;
+    text-align: center;
+}
+
+.loadingImg {
+    width: 100px;
+}
+
+#loadingText {
+    opacity: 1;
+    animation: fadeInfadeOut 1s ease-in-out infinite;
+}
+
+@keyframes fadeInfadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.copyright {
+    font-size: 12px;
+    color: #a3a3a3;
+    margin-top: 20px;
+}

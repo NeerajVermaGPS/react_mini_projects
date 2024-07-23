@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# raw files
+/src/Jokes/files/jokes.json
+
+# secret keys
+/src/files/secrets.js
+
 # testing
 /coverage
 
