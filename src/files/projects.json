@@ -12,5 +12,12 @@
         "link": "Jokes",
         "status": "Completed",
         "date": "July 23, 2024"
+    },
+    {
+        "id": 3,
+        "name": "Tic Tac Toe",
+        "link": "TicTacToe",
+        "status": "Completed",
+        "date": "July 27, 2024"
     }
 ]

@@ -1,0 +1,20 @@
+:root {
+    --borderGray: #efefef;
+    --borderWeight: 1px
+}
+
+.innerBoxes:nth-child(n + 4) {
+    border-top: var(--borderWeight) solid var(--borderGray);
+}
+
+.innerBoxes:nth-child(3n + 2), .innerBoxes:nth-child(3n) {
+    border-left: var(--borderWeight) solid var(--borderGray);
+}
+
+.innerBoxes:nth-child(-n + 6) {
+    border-bottom: var(--borderWeight) solid var(--borderGray);
+}
+
+.innerBoxes:nth-child(3n + 1), .innerBoxes:nth-child(3n + 2) {
+    border-right: var(--borderWeight) solid var(--borderGray);
+}
